@@ -75,7 +75,7 @@ ul li a:hover {
 }
 @font-face {
     font-family: 'Kingsguard Calligraphy';
-    src: url('caminho/para/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf') format('truetype');
+    src: url('https://github.com/Lucas5963/meu-site/blob/e282589c6f339fd8f4bcf9da31eacfadfbe00d84/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf') format('truetype');
 }
 
 body {
