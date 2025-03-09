@@ -73,9 +73,11 @@ ul li a {
 ul li a:hover {
     color: #4CAF50;            /* Cor dos links ao passar o mouse */
 }
+
+
 @font-face {
     font-family: 'Kingsguard Calligraphy';
-    src: url('https://github.com/Lucas5963/meu-site/blob/e282589c6f339fd8f4bcf9da31eacfadfbe00d84/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf') format('truetype');
+    src: url('https://raw.githubusercontent.com/Lucas5963/meu-site/main/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf') format('opentype');
 }
 
 body {
