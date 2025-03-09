@@ -19,9 +19,12 @@ header {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 10px;
+h1::before {
+    content: "❤️"; /* Emoji de coração */
+    font-size: 30px;
+    margin-right: 10px;
 }
+
 
 section {
     padding: 20px;
