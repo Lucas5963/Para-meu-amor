@@ -73,3 +73,16 @@ ul li a {
 ul li a:hover {
     color: #4CAF50;            /* Cor dos links ao passar o mouse */
 }
+@font-face {
+    font-family: 'Kingsguard Calligraphy';
+    src: url('caminho/para/KingsguardCalligraphy.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Kingsguard Calligraphy', serif;
+}
+
+
+
+
+
