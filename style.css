@@ -76,12 +76,12 @@ ul li a:hover {
 
 
 @font-face {
-    font-family: 'Kingsguard Calligraphy';
-    src: url('https://raw.githubusercontent.com/Lucas5963/meu-site/main/KingsguardCalligraphy_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-family: 'Love House';
+    src: url('https://raw.githubusercontent.com/Lucas5963/meu-site/main/Love-House.otf') format('opentype');
 }
 
 body {
-    font-family: 'Kingsguard Calligraphy', serif;
+    font-family: 'Love House', sans-serif;
 }
 
 
