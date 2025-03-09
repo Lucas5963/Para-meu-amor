@@ -128,5 +128,58 @@ button:hover::before, button:hover::after {
     top: -15px; /* Faz as "pontas" do coração subirem ao passar o mouse */
 }
 
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para o parágrafo */
+p {
+    margin-bottom: 20px; /* Espaço entre os parágrafos */
+    padding: 10px 0; /* Espaçamento interno */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #FF69B4; /* Cor de fundo rosa */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
 
 
