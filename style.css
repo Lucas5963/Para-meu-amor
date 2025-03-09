@@ -88,6 +88,45 @@ body {
 }
 
 
+button {
+    background-color: #FF69B4; /* Cor de fundo rosa */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; /* Tornando o botão redondo */
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    outline: none;
+}
+
+button::before, button::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FF69B4; /* Cor do coração */
+    border-radius: 50%;
+    top: -10px;
+    transition: all 0.3s ease;
+}
+
+button::before {
+    left: -10px;
+}
+
+button::after {
+    right: -10px;
+}
+
+button:hover {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho quando passa o mouse */
+}
+
+button:hover::before, button:hover::after {
+    top: -15px; /* Faz as "pontas" do coração subirem ao passar o mouse */
+}
 
 
 
