@@ -144,7 +144,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #4CAF50; /* Cor de fundo verde */
+    background-color:  #800080; /* Cor de fundo roxo */
     color: white;
     padding: 20px;
     text-align: center;
@@ -182,4 +182,17 @@ footer {
     color: white;
 }
 
+@font-face {
+    font-family: 'Love House';
+    src: url('https://github.com/Lucas5963/meu-site/blob/main/Love%20House.otf') format('opentype');
+}
 
+body {
+    font-family: 'Love House', sans-serif;
+}
+header {
+    background-color: #800080; /* Alterada a cor do cabeçalho para roxo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
