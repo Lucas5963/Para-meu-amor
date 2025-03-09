@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: "Times New Roman", serif; /* Alterada a fonte */
+    font-family: "Times New Roman", serif; /* Alterada a fonte para Times New Roman */
     line-height: 1.6;
     background-color: red; /* Alterada a cor de fundo para vermelho */
     color: #333;
@@ -37,10 +37,9 @@ footer {
     color: white;
 }
 
-/* Estilo para os Botões */
 button {
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white;              /* Cor do texto */
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white;              /* Cor do texto dos botões */
     border: none;              /* Remover borda */
     padding: 10px 20px;        /* Espaçamento interno */
     font-size: 16px;           /* Tamanho da fonte */
@@ -50,7 +49,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
+    background-color: #45a049; /* Cor dos botões ao passar o mouse */
 }
 
 /* Estilo para a Lista de Tópicos */
@@ -72,21 +71,5 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #4CAF50;            /* Cor do link ao passar o mouse */
-}
-
-/* Estilo para os Botões */
-button {
-    background-color: #4CAF50; /* Cor de fundo */
-    color: white;              /* Cor do texto */
-    border: none;              /* Remover borda */
-    padding: 10px 20px;        /* Espaçamento interno */
-    font-size: 16px;           /* Tamanho da fonte */
-    cursor: pointer;          /* Cursor de mão */
-    border-radius: 5px;        /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Efeito de transição */
-}
-
-button:hover {
-    background-color: #45a049; /* Cor do botão ao passar o mouse */
+    color: #4CAF50;            /* Cor dos links ao passar o mouse */
 }
