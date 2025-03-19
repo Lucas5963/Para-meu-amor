@@ -5,31 +5,43 @@
     box-sizing: border-box;
 }
 
-/* Definindo a fonte personalizada */
-@font-face {
-    font-family: 'Love House';
-    src: url('https://raw.githubusercontent.com/Lucas5963/meu-site/main/Love%20House.otf') format('opentype');
+/* Adicionando a imagem de fundo e a sobreposição para o corpo */
+body {
+    font-family: 'Beautiful Handmade', sans-serif; /* Fonte personalizada */
+    font-size: 18px; /* Aumenta o tamanho da fonte para 18px */ 
+    line-height: 1.6;
+    background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
+    background-size: cover; /* A imagem ocupa toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Fixa a imagem no fundo ao rolar a página */
+    color: #000; /* Letras pretas */
+    font-family: 'Love House', sans-serif;  /* Garantindo que a fonte personalizada seja aplicada */
+    position: relative;
 }
 
-/* Estilo do corpo */
-body {
-    font-family: 'Love House', sans-serif; /* Fonte personalizada */
-    line-height: 1.6;
-    background-color: #ff6666; /* Vermelho claro */
-    color: #000; /* Letras pretas */
+/* Adicionando uma sobreposição escura no fundo */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade */
+    z-index: -1; /* Coloca a sobreposição abaixo do conteúdo */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #800080; /* Roxo */
+    background-color: rgba(128, 0, 128, 0.7); /* Roxo com opacidade para destacar o texto */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 h1::before {
-    content: "❤️"; /* Emoji de coração */
-    font-size: 30px;
+    content: "??"; /* Emoji de coração */
+    font-size: 40px;
     margin-right: 10px;
 }
 
@@ -37,87 +49,109 @@ h1::before {
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #ff6666; /* Vermelho claro nas seções */
+    background-color: rgba(255, 102, 102, 0.8); /* Vermelho claro com opacidade */
     color: #000; /* Letras pretas */
     border-radius: 8px;
 }
 
-/* Parágrafos */
-p {
-    margin-bottom: 20px;
-    padding: 10px 0;
-    color: #000; /* Letras pretas */
-}
-
-/* Lista de tópicos */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #000; /* Links pretos */
-    font-size: 18px;
-    padding: 5px;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #4CAF50; /* Verde ao passar o mouse */
-}
-
-/* Botão */
-button {
-    background-color: #FF69B4; /* Rosa */
-    color: white;
-    border: none;
-    padding: 40px 80px;
-    font-size: 40px;
-    cursor: pointer;
-    border-radius: 50%; /* Botão redondo */
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    outline: none;
-}
-
-button::before,
-button::after {
-    content: "";
-    position: absolute;
-    width: 20x;
-    height: 20px;
-    background-color: #FF69B4; /* Cor do "coração" */
-    border-radius: 50%;
-    top: -10px;
-    transition: all 0.3s ease;
-}
-
-button::before {
-    left: -10px;
-}
-
-button::after {
-    right: -10px;
-}
-
-button:hover {
-    transform: scale(1.1); /* Aumenta o botão */
-}
-
-button:hover::before,
-button:hover::after {
-    top: -15px; /* "Corações" sobem */
-}
-
-/* Rodapé */
-footer {
+/* Novo botão animado */
+.animated-button {
+    background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
+    padding: 20px 40px;
+    margin: 12px;
+    display: inline-flex;  /* Usando flex para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    transform: translate(0%, 0%);
+    overflow: hidden;
+    color: #d4e0f7;
+    font-size: 20px;
+    letter-spacing: 2.5px;
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    font-family: 'Love House', sans-serif;  /* Aplicando a fonte personalizada */
 }
+
+/* Estilos para o texto do botão */
+.animated-button span {
+    position: absolute;
+}
+
+.animated-button span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
+    animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.animated-button span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
+    animation: 2s animateRight linear -1s infinite;
+}
+
+@keyframes animateRight {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+.animated-button span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
+    animation: 2s animateBottom linear infinite;
+}
+
+@keyframes animateBottom {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.animated-button span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
+    animation: 2s animateLeft linear -1s infinite;
+}
+
+@keyframes animateLeft {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+/* Adicionando a fonte "Beautiful Handmade" */
+@font-face {
+    font-family: 'Beautiful Handmade';
+    src: url('fonts/BeautifulHandmade.ttf') format('truetype'); /* Caminho para a fonte */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Beautiful Handmade', sans-serif; /* Usando a fonte personalizada */
+    line-height: 1.6;
+    background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000;
+    position: relative;
+}
+
