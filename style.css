@@ -41,7 +41,7 @@ header {
 
 h1::before {
     content: "??"; /* Emoji de coração */
-    font-size: 40px;
+    font-size: 48px;
     margin-right: 10px;
 }
 
