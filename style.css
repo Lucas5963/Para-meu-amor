@@ -8,7 +8,7 @@
 /* Adicionando a imagem de fundo e a sobreposição para o corpo */
 body {
     font-family: 'Beautiful Handmade', sans-serif; /* Fonte personalizada */
-    font-size: 18px; /* Aumenta o tamanho da fonte para 18px */ 
+    font-size: 25px; /* Aumenta o tamanho da fonte para 18px */ 
     line-height: 1.6;
     background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
     background-size: cover; /* A imagem ocupa toda a tela */
@@ -146,6 +146,7 @@ section {
 /* Estilo do corpo */
 body {
     font-family: 'Beautiful Handmade', sans-serif; /* Usando a fonte personalizada */
+    font-size: 25px; /* Aumenta o tamanho da fonte para 18px */ 
     line-height: 1.6;
     background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
     background-size: cover;
