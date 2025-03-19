@@ -5,17 +5,24 @@
     box-sizing: border-box;
 }
 
+/* Adicionando a fonte "Beautiful Handmade" */
+@font-face {
+    font-family: 'Beautiful Handmade';
+    src: url('Beautiful Handmade.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Adicionando a imagem de fundo e a sobreposição para o corpo */
 body {
-    font-family: 'Beautiful Handmade', sans-serif; /* Fonte personalizada */
-    font-size: 28px; /* Aumenta o tamanho da fonte para 18px */ 
+    font-family: 'Beautiful Handmade', sans-serif;
+    font-size: 28px;
     line-height: 1.6;
     background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
-    background-size: cover; /* A imagem ocupa toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Fixa a imagem no fundo ao rolar a página */
-    color: #000; /* Letras pretas */
-    font-family: 'Love House', sans-serif;  /* Garantindo que a fonte personalizada seja aplicada */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000;
     position: relative;
 }
 
@@ -27,20 +34,20 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade */
-    z-index: -1; /* Coloca a sobreposição abaixo do conteúdo */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 /* Cabeçalho */
 header {
-    background-color: rgba(128, 0, 128, 0.7); /* Roxo com opacidade para destacar o texto */
+    background-color: rgba(128, 0, 128, 0.7);
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 h1::before {
-    content: "??"; /* Emoji de coração */
+    content: "??";
     font-size: 48px;
     margin-right: 10px;
 }
@@ -49,8 +56,8 @@ h1::before {
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: rgba(255, 102, 102, 0.8); /* Vermelho claro com opacidade */
-    color: #000; /* Letras pretas */
+    background-color: rgba(255, 102, 102, 0.8);
+    color: #000;
     border-radius: 8px;
 }
 
@@ -59,9 +66,9 @@ section {
     background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
     padding: 20px 40px;
     margin: 12px;
-    display: inline-flex;  /* Usando flex para centralizar o conteúdo */
-    justify-content: center; /* Centraliza o texto horizontalmente */
-    align-items: center; /* Centraliza o texto verticalmente */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     transform: translate(0%, 0%);
     overflow: hidden;
     color: #d4e0f7;
@@ -72,7 +79,7 @@ section {
     text-decoration: none;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     position: relative;
-    font-family: 'Love House', sans-serif;  /* Aplicando a fonte personalizada */
+    font-family: 'Beautiful Handmade', sans-serif; /* Alterei aqui para usar a mesma fonte */
 }
 
 /* Estilos para o texto do botão */
@@ -135,23 +142,3 @@ section {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100%); }
 }
-/* Adicionando a fonte "Beautiful Handmade" */
-@font-face {
-    font-family: 'Beautiful Handmade';
-    src: url('fonts/BeautifulHandmade.ttf') format('truetype'); /* Caminho para a fonte */
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Estilo do corpo */
-body {
-    font-family: 'Beautiful Handmade', sans-serif; /* Usando a fonte personalizada */
-    line-height: 1.6;
-    background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #000;
-    position: relative;
-}
-
