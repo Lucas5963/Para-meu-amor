@@ -16,7 +16,7 @@
 /* Adicionando a imagem de fundo e a sobreposição para o corpo */
 body {
     font-family: 'Beautiful Handmade', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     line-height: 1.6;
     background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
     background-size: cover;
@@ -64,7 +64,7 @@ section {
 /* Novo botão animado */
 .animated-button {
     background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
-    padding: 20px 40px;
+    padding: 40px 60px;
     margin: 12px;
     display: inline-flex;
     justify-content: center;
