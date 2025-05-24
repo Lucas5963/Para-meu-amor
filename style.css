@@ -1,21 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap');
+
 /* Resetando margens e padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Adicionando a fonte "Beautiful Handmade" */
-@font-face {
-    font-family: 'Beautiful Handmade';
-    src: url('Beautiful Handmade.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Zeyada", cursive;
 }
 
 /* Adicionando a imagem de fundo e a sobreposição para o corpo */
 body {
-    font-family: 'Beautiful Handmade', sans-serif;
     font-size: 30px;
     line-height: 1.6;
     background-image: url('https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFwZWwlMjBkZSUyMHBhcmVkZSUyMGZsb3J8ZW58MHx8MHx8fDA%3D');
@@ -40,51 +36,54 @@ body::after {
 
 /* Cabeçalho */
 header {
-    background-color: rgba(128, 0, 128, 0.7);
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: rgba(2, 2, 2, 0);
+    color:white;
+    padding:20px;
+    text-align:center;
 }
 
 h1::before {
     content: " ";
     font-size: 48px;
     margin-right: 10px;
+    font-family: "Playpen Sans Deva", cursive;
 }
 
 /* Seções */
 section {
     padding: 20px;
     margin: 20px 0;
-    background-color: rgba(255, 102, 102, 0.8);
-    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
     border-radius: 8px;
 }
 
 /* Novo botão animado */
 .animated-button {
-    background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
+    background: transparent;
     padding: 40px 60px;
     margin: 12px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0%, 0%);
+    transform: translate(2%, 2%);
     overflow: hidden;
     color: #d4e0f7;
+    border-radius: 50%;
     font-size: 20px;
     letter-spacing: 2.5px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    position: relative;
-    font-family: 'Beautiful Handmade', sans-serif; /* Alterei aqui para usar a mesma fonte */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0)
+    position:relative;
+    font-family:'Beautiful Handmade', sans-serif; /* Alterei aqui para usar a mesma fonte */
 }
 
 /* Estilos para o texto do botão */
 .animated-button span {
     position: absolute;
+    font-family: "Playpen Sans Deva", cursive;
 }
 
 .animated-button span:nth-child(1) {
@@ -92,7 +91,7 @@ section {
     left: 0px;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
+    background: linear-gradient(to left, #00000000, #2662d900);
     animation: 2s animateTop linear infinite;
 }
 
@@ -106,7 +105,7 @@ section {
     right: 0px;
     height: 100%;
     width: 2px;
-    background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
+    background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d900);
     animation: 2s animateRight linear -1s infinite;
 }
 
@@ -120,7 +119,7 @@ section {
     left: 0px;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #2rgba(38, 98, 217, 0) 22, 22), 98, 217, 0)0, 0)0, 0)
     animation: 2s animateBottom linear infinite;
 }
 
@@ -134,7 +133,7 @@ section {
     left: 0px;
     height: 100%;
     width: 2px;
-    background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
+    background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d900);
     animation: 2s animateLeft linear -1s infinite;
 }
 
